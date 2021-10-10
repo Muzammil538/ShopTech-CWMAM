@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li,a {
+    text-decoration: none;
+    list-style: none;
+}
+header {
+    padding: 8px 30px;
+    background-color: #80dfff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+header #menuBars {
+    display: none;
+}
+
+header > form {
+    padding: 10px 15px;
+    /* background-color: #0066ff; */
+}
+form #searchBox {
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 270px;
+    font-size: 16px;
+}
+
+form #searchBtn {
+    cursor: pointer;
+    position: absolute;
+    /* top: 3%;
+    right: 7%;
+    transform: translate(50%,50%); */
+    padding: 10px;
+    background-color: #0066ff;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+.sidenav a {
+    color: #333;
+}
+.sidenav a i {
+    font-size: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 22px;
+    background-color: #f0f0f0;
+}
+nav li {
+    padding: 5px;
+}
+nav li a {
+    color: #333;
+}
+nav li a:hover {
+    color: aqua;
+    transition-delay: 0.2s;
+}
+
+
+.container {
+    padding: 15px 35px;
+}
+.row {
+    display: block;
+    padding: 7px 15px;
+}
+.row .row-title {
+    border-bottom: 2px solid #80dfff;
+    margin-bottom: 10px;
+}
+.row-md {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+}
+.row-md .card {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.row-md .card.high {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.row-md .card.cut {
+    display: none;
+}
+.card-details {
+    display: block;
+    text-align: center;
+}
+.row .card .card-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 20px;
+}
+.row .card .lined {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.row .card .card-btn {
+    padding: 5px 20px;
+    background-color: #80dfff;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #333;
+}
