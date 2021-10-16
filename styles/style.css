@@ -25,6 +25,9 @@ header > form {
     padding: 10px 15px;
     /* background-color: #0066ff; */
 }
+form#searchFormii {
+    display: none;
+}
 form #searchBox {
     padding: 10px 25px;
     border: none;
@@ -128,4 +131,91 @@ nav li a:hover {
     border-radius: 15px;
     cursor: pointer;
     color: #333;
+}
+
+@media screen and (max-width: 468px){
+    header{
+        padding: 4px 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header #menuBars{
+        display: block;
+        cursor: pointer;
+    }
+    header form#searchFormtop {
+        padding: 5px 7px;
+        display: none;
+    }
+    form#searchFormii.active {
+        display: flex;
+        padding: 10px;
+        background-color: #3333;
+        justify-content: space-between;
+        align-items: center;
+    }
+    form#searchFormii.active #searchBoxii {
+        padding: 5px 15px;
+        border: 0.2px solid #80dfff;
+        outline: none;
+        border-radius: 20px;
+        width: 200px;
+        font-size: 16px;
+        position: relative;
+    }
+    form#searchFormii.active> #searchBtnii {
+        cursor: pointer;
+        padding: 8px;
+        background-color: #0066ff;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        position: relative;
+    }
+    .container {
+        padding: 10px 20px;
+    }
+    .row {
+        display: block;
+        padding: 4px 8px;
+    }
+    .row .row-title {
+        border-bottom: 2px solid #80dfff;
+        margin-bottom: 5px;
+    }
+    .row-md .card {
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+    .row-md .card.high {
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+    .row-md .card.cut {
+        display: none;
+    }
+    .row .card .card-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+    }
+    .row .card .card-btn {
+        padding: 5px 10px;
+        background-color: #80dfff;
+        border-radius: 15px;
+        cursor: pointer;
+        color: #333;
+    }
 }
